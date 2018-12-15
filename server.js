@@ -1,5 +1,9 @@
 // Get the packages we need
 var express = require('express');
+var mongoose = require('mongoose');
+
+// Connect to the users MongoDB
+mongoose.connect('mongodb://localhost:27017/users');
 
 // Create our Express application
 var app = express();
